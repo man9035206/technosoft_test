@@ -6,11 +6,11 @@ cd technosoft_test
 
 composer install
 
-php artisan migrate
+php artisan migrate(data base configuration required  either in .env file or database.php file)
 
 php artisan serve
 
-Rename .env.example to .env and database configuration
+Rename .env.example to .env,
 
 Requirement:
 PHP 7.0.0 or Above.
@@ -21,12 +21,12 @@ php artisan empdata:SET 2 JackPeter 191.168.10.10
 
 php artisan empdata:GET 191.168.10.10
 
-php artisan empdata:UNSET 191.168.10.11
+php artisan empdata:UNSET 191.168.10.10
 
 
 php artisan empwebhistory:SET  191.168.10.10 http://127.0.0.1:8000/employees_web_history/2 2020-01-02
 
-php artisan empwebhistory:GET 191.168.12.10
+php artisan empwebhistory:GET 191.168.10.10
 
 php artisan empwebhistory:UNSET 191.168.10.10
 
